@@ -1,0 +1,23 @@
+title: Local Cycling Resources in CityCity
+description: Listing all the useful cycling resources in CityCity
+types:
+# This defines the shops data
+# Every type should have an unique identifier
+- id: shops
+  # For every type, we need to know in which directory we can find the data
+  directory: shops
+  # Define some fields
+  fields:
+  # Every field should have an unique identifier
+  - id: title
+    # For each field, we need to tell it where in the data to look for the value.
+    key: title
+    # For each field, we should give it a friendly title
+    title: Title of Shop
+  - id: url
+    key: url
+    title: URL of Website about Shop
+  # We need to tell DataTig which fields are important to list when looking at a list of all the data.
+  list_fields:
+  - title
+
